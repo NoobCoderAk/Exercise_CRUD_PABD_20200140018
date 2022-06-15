@@ -10,11 +10,44 @@ using System.Windows.Forms;
 
 namespace Exercise_CRUD_PABD
 {
-    public partial class Form2 : Form
+    public partial class FormBeranda : Form
     {
-        public Form2()
+        public FormBeranda()
         {
             InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbPenyewa_Click(object sender, EventArgs e)
+        {
+            new FormDataPenyewa().Show();
+            this.Hide();
+        }
+
+        private void pbBangunan_Click(object sender, EventArgs e)
+        {
+            new FormDataPenyewa().Show();
+            this.Hide();
+        }
+
+        private void pbTransaksi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            new FormLogin().Show();
+            this.Hide();
         }
     }
 }

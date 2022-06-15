@@ -46,14 +46,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="DB_MallDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_MallDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataBangunan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormDataBangunan.Designer.cs">
+      <DependentUpon>FormDataBangunan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataPenyewa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataPenyewa.Designer.cs">
+      <DependentUpon>FormDataPenyewa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataTransaksi.Designer.cs">
+      <DependentUpon>FormDataTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetailPenyewa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailPenyewa.Designer.cs">
+      <DependentUpon>FormDetailPenyewa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBeranda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBeranda.Designer.cs">
+      <DependentUpon>FormBeranda.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDataPenyewa.resx">
+      <DependentUpon>FormDataPenyewa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailPenyewa.resx">
+      <DependentUpon>FormDetailPenyewa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBeranda.resx">
+      <DependentUpon>FormBeranda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +109,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DB_MallDataSet.xsc">
+      <DependentUpon>DB_MallDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_MallDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_MallDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_MallDataSet.xss">
+      <DependentUpon>DB_MallDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +134,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -129,7 +129,7 @@ namespace Exercise_CRUD_PABD
             this.Controls.Add(this.label_Username);
             this.Controls.Add(this.Login_Label);
             this.Name = "FormLogin";
-            this.Text = "Form1";
+            this.Text = "Halaman Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

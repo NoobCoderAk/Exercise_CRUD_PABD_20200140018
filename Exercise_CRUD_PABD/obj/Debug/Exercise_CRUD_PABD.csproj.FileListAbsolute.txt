@@ -1,0 +1,13 @@
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\bin\Debug\Exercise_CRUD_PABD.exe.config
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\bin\Debug\Exercise_CRUD_PABD.exe
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\bin\Debug\Exercise_CRUD_PABD.pdb
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\obj\Debug\Exercise_CRUD_PABD.csprojAssemblyReference.cache
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\obj\Debug\Exercise_CRUD_PABD.FormDataPenyewa.resources
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\obj\Debug\Exercise_CRUD_PABD.FormDetailPenyewa.resources
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\obj\Debug\Exercise_CRUD_PABD.FormLogin.resources
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\obj\Debug\Exercise_CRUD_PABD.FormBeranda.resources
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\obj\Debug\Exercise_CRUD_PABD.Properties.Resources.resources
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\obj\Debug\Exercise_CRUD_PABD.csproj.GenerateResource.cache
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\obj\Debug\Exercise_CRUD_PABD.csproj.CoreCompileInputs.cache
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\obj\Debug\Exercise_CRUD_PABD.exe
+E:\DATA SOURCE CODE\PABD\ExeCRUD\Exercise_CRUD_PABD\obj\Debug\Exercise_CRUD_PABD.pdb
