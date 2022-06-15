@@ -43,40 +43,20 @@ namespace Exercise_CRUD_PABD
         private void cmdAdd_Click(object sender, EventArgs e)
         {
             cmdSave.Enabled = true;
+            txtCode.Enabled = true;
             txtName.Enabled = true;
             txtLokasi.Enabled = true;
             txtTahunan.Enabled = true;
             txtBulanan.Enabled = true;
 
+
+            txtCode.Text = "";
             txtName.Text = "";
             txtLokasi.Text = "";
             txtTahunan.Text = "";
             txtBulanan.Text = "";
 
-            int ctr, len;
-            string codeval;
-
             dt = dB_MallDataSet.Tables["Bangunan"];
-            len = dt.Rows.Count - 1;
-            dr = dt.Rows[len];
-            code = dr["Kode_Bangunan"].ToString();
-            codeval = code.Substring(2, 3);
-            ctr = Convert.ToInt32(codeval);
-            if ((ctr >= 1) && (ctr < 9))
-            {
-                ctr = ctr + 1;
-                txtCode.Text = "BGN0" + ctr;
-            }
-            else if ((ctr >= 9) && (ctr < 99))
-            {
-                ctr = ctr + 1;
-                txtCode.Text = "BGN" + ctr;
-            }
-            else if (ctr >= 90)
-            {
-                ctr = ctr + 1;
-                txtCode.Text = "BGN" + ctr;
-            }
 
             cmdAdd.Enabled = false;
         }

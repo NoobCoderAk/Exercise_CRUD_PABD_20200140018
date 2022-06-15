@@ -46,42 +46,21 @@ namespace Exercise_CRUD_PABD
         private void cmdAdd_Click(object sender, EventArgs e)
         {
             cmdSave.Enabled = true;
+            txtCode.Enabled = true;
             txtName.Enabled = true;
             txtAddress.Enabled = true;
             txtKTP.Enabled = true;
             txtTelp.Enabled = true;
             txtKel.Enabled = true;
 
+            txtCode.Text = "";
             txtName.Text = "";
             txtAddress.Text = "";
             txtKTP.Text = "";
             txtTelp.Text = "";
             txtKel.Text = "";
 
-            int ctr, len;
-            string codeval;
-
             dt = dB_MallDataSet.Tables["Penyewa"];
-            len = dt.Rows.Count - 1;
-            dr = dt.Rows[len];
-            code = dr["Kode_Penyewa"].ToString();
-            codeval = code.Substring(1, 3);
-            ctr = Convert.ToInt32(codeval);
-            if ((ctr >= 1) && (ctr < 9))
-            {
-                ctr = ctr + 1;
-                txtCode.Text = "PNY0" + ctr;
-            }
-            else if ((ctr >= 9) && (ctr < 99))
-            {
-                ctr = ctr + 1;
-                txtCode.Text = "PNY" + ctr;
-            }
-            else if (ctr >= 90)
-            {
-                ctr = ctr + 1;
-                txtCode.Text = "PNY" + ctr;
-            }
 
             cmdAdd.Enabled = false;
         }
