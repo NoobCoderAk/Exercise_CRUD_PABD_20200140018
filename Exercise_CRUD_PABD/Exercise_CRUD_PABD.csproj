@@ -69,11 +69,23 @@
     <Compile Include="FormDataTransaksi.Designer.cs">
       <DependentUpon>FormDataTransaksi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDetailBangunan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailBangunan.Designer.cs">
+      <DependentUpon>FormDetailBangunan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDetailPenyewa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDetailPenyewa.Designer.cs">
       <DependentUpon>FormDetailPenyewa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetailTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailTransaksi.Designer.cs">
+      <DependentUpon>FormDetailTransaksi.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -89,11 +101,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDataBangunan.resx">
+      <DependentUpon>FormDataBangunan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDataPenyewa.resx">
       <DependentUpon>FormDataPenyewa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDataTransaksi.resx">
+      <DependentUpon>FormDataTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailBangunan.resx">
+      <DependentUpon>FormDetailBangunan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDetailPenyewa.resx">
       <DependentUpon>FormDetailPenyewa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailTransaksi.resx">
+      <DependentUpon>FormDetailTransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

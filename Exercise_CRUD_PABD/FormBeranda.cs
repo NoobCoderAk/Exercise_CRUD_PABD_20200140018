@@ -30,13 +30,14 @@ namespace Exercise_CRUD_PABD
 
         private void pbBangunan_Click(object sender, EventArgs e)
         {
-            new FormDataPenyewa().Show();
+            new FormDataBangunan().Show();
             this.Hide();
         }
 
         private void pbTransaksi_Click(object sender, EventArgs e)
         {
-
+            new FormDataTransaksi().Show();
+            this.Hide();
         }
 
         private void label4_Click(object sender, EventArgs e)

@@ -10,35 +10,32 @@ using System.Windows.Forms;
 
 namespace Exercise_CRUD_PABD
 {
-    public partial class FormDetailPenyewa : Form
+
+    public partial class FormDetailBangunan : Form
     {
+
         DataTable dt;
         DataRow dr;
         string code;
-        public FormDetailPenyewa()
+        public FormDetailBangunan()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
-            new FormDataPenyewa().Show();
-            this.Hide();
+
         }
 
-        private void FormDetailPenyewa_Load(object sender, EventArgs e)
+        private void FormDetailBangunan_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_MallDataSet.Penyewa' table. You can move, or remove it, as needed.
-            this.penyewaTableAdapter.Fill(this.dB_MallDataSet.Penyewa);
-            // TODO: This line of code loads data into the 'dB_MallDataSet.Penyewa' table. You can move, or remove it, as needed.
-            this.penyewaTableAdapter.Fill(this.dB_MallDataSet.Penyewa);
-
+            // TODO: This line of code loads data into the 'dB_MallDataSet.Bangunan' table. You can move, or remove it, as needed.
+            this.bangunanTableAdapter.Fill(this.dB_MallDataSet.Bangunan);
             txtCode.Enabled = false;
             txtName.Enabled = false;
-            txtAddress.Enabled = false;
-            txtKTP.Enabled = false;
-            txtTelp.Enabled = false;
-            txtKel.Enabled = false;
+            txtLokasi.Enabled = false;
+            txtTahunan.Enabled = false;
+            txtBulanan.Enabled = false;
 
             cmdSave.Enabled = false;
         }
@@ -47,40 +44,38 @@ namespace Exercise_CRUD_PABD
         {
             cmdSave.Enabled = true;
             txtName.Enabled = true;
-            txtAddress.Enabled = true;
-            txtKTP.Enabled = true;
-            txtTelp.Enabled = true;
-            txtKel.Enabled = true;
+            txtLokasi.Enabled = true;
+            txtTahunan.Enabled = true;
+            txtBulanan.Enabled = true;
 
             txtName.Text = "";
-            txtAddress.Text = "";
-            txtKTP.Text = "";
-            txtTelp.Text = "";
-            txtKel.Text = "";
+            txtLokasi.Text = "";
+            txtTahunan.Text = "";
+            txtBulanan.Text = "";
 
             int ctr, len;
             string codeval;
 
-            dt = dB_MallDataSet.Tables["Penyewa"];
+            dt = dB_MallDataSet.Tables["Bangunan"];
             len = dt.Rows.Count - 1;
             dr = dt.Rows[len];
-            code = dr["Kode_Penyewa"].ToString();
-            codeval = code.Substring(1, 3);
+            code = dr["Kode_Bangunan"].ToString();
+            codeval = code.Substring(2, 3);
             ctr = Convert.ToInt32(codeval);
             if ((ctr >= 1) && (ctr < 9))
             {
                 ctr = ctr + 1;
-                txtCode.Text = "P00" + ctr;
+                txtCode.Text = "BGN0" + ctr;
             }
             else if ((ctr >= 9) && (ctr < 99))
             {
                 ctr = ctr + 1;
-                txtCode.Text = "P0" + ctr;
+                txtCode.Text = "BGN" + ctr;
             }
             else if (ctr >= 90)
             {
                 ctr = ctr + 1;
-                txtCode.Text = "P" + ctr;
+                txtCode.Text = "BGN" + ctr;
             }
 
             cmdAdd.Enabled = false;
@@ -92,21 +87,19 @@ namespace Exercise_CRUD_PABD
             dr = dt.NewRow();
             dr[0] = txtCode.Text;
             dr[1] = txtName.Text;
-            dr[2] = txtAddress.Text;
-            dr[3] = txtKTP.Text;
-            dr[4] = txtTelp.Text;
-            dr[5] = txtKel.Text;
+            dr[2] = txtLokasi.Text;
+            dr[3] = txtTahunan.Text;
+            dr[4] = txtBulanan.Text;
             dt.Rows.Add(dr);
-            penyewaTableAdapter.Update(dB_MallDataSet);
+            bangunanTableAdapter.Update(dB_MallDataSet);
             txtCode.Text = System.Convert.ToString(dr[0]);
             txtCode.Enabled = false;
             txtName.Enabled = false;
-            txtAddress.Enabled = false;
-            txtKTP.Enabled = false;
-            txtTelp.Enabled = false;
-            txtKel.Enabled = false;
+            txtLokasi.Enabled = false;
+            txtTahunan.Enabled = false;
+            txtBulanan.Enabled = false;
 
-            this.penyewaTableAdapter.Fill(this.dB_MallDataSet.Penyewa);
+            this.bangunanTableAdapter.Fill(this.dB_MallDataSet.Bangunan);
             cmdAdd.Enabled = true;
             cmdSave.Enabled = false;
         }
@@ -117,12 +110,13 @@ namespace Exercise_CRUD_PABD
             code = txtCode.Text;
             dr = dB_MallDataSet.Tables["Penyewa"].Rows.Find(code);
             dr.Delete();
-            penyewaTableAdapter.Update(dB_MallDataSet);
+            bangunanTableAdapter.Update(dB_MallDataSet);
         }
 
-        private void txtCode_TextChanged(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            new FormDataBangunan().Show();
+            this.Hide();
         }
     }
 }
