@@ -83,7 +83,7 @@ namespace Exercise_CRUD_PABD
 
         private void cmdSave_Click(object sender, EventArgs e)
         {
-            dt = dB_MallDataSet.Tables["Penyewa"];
+            dt = dB_MallDataSet.Tables["Bangunan"];
             dr = dt.NewRow();
             dr[0] = txtCode.Text;
             dr[1] = txtName.Text;
@@ -108,7 +108,7 @@ namespace Exercise_CRUD_PABD
         {
             string code;
             code = txtCode.Text;
-            dr = dB_MallDataSet.Tables["Penyewa"].Rows.Find(code);
+            dr = dB_MallDataSet.Tables["Bangunan"].Rows.Find(code);
             dr.Delete();
             bangunanTableAdapter.Update(dB_MallDataSet);
         }

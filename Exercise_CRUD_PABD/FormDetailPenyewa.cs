@@ -70,17 +70,17 @@ namespace Exercise_CRUD_PABD
             if ((ctr >= 1) && (ctr < 9))
             {
                 ctr = ctr + 1;
-                txtCode.Text = "P00" + ctr;
+                txtCode.Text = "PNY0" + ctr;
             }
             else if ((ctr >= 9) && (ctr < 99))
             {
                 ctr = ctr + 1;
-                txtCode.Text = "P0" + ctr;
+                txtCode.Text = "PNY" + ctr;
             }
             else if (ctr >= 90)
             {
                 ctr = ctr + 1;
-                txtCode.Text = "P" + ctr;
+                txtCode.Text = "PNY" + ctr;
             }
 
             cmdAdd.Enabled = false;
